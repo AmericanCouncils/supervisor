@@ -904,6 +904,8 @@ where specified.
 ``stdout_syslog``
 
   If true, stdout will be directed to syslog along with the process name.
+  Messages are sent with a user priority, a tag of the process name
+  without PID, and an additional prefix of ``stdout:``
 
   *Default*: False
 
@@ -981,6 +983,8 @@ where specified.
 ``stderr_syslog``
 
   If true, stderr will be directed to syslog along with the process name.
+  Messages are sent with a user priority, a tag of the process name
+  without PID, and an additional prefix of ``stderr``
 
   *Default*: False
 
